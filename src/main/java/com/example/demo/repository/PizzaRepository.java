@@ -7,5 +7,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PizzaRepository extends MongoRepository<Pizza, Long> {
 
+    Pizza findPizzaByName(String pizzaName);
+
+    Pizza findPizzaById(Long id);
 
 }
