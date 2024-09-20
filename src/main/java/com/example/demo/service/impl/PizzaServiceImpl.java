@@ -63,6 +63,7 @@ public class PizzaServiceImpl implements PizzaService {
         pizzaForUpdate.setDescription(pizza.getDescription());
         pizzaForUpdate.setPrice(pizza.getPrice());
         pizzaForUpdate.setIsAvailable(pizza.getIsAvailable());
+        pizzaForUpdate.setImage(pizza.getImage());
 
         return pizzaRepository.save(pizzaForUpdate);
     }
