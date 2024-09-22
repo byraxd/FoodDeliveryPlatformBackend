@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/user")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
 
     private final UserRepository userRepository;
@@ -102,6 +103,5 @@ public class UserController {
 
         }
         return new UsernamePasswordAuthenticationToken(userDetails,null,userDetails.getAuthorities());
-
     }
 }
