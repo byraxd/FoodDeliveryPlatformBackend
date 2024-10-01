@@ -32,8 +32,9 @@ public class User implements UserDetails {
     private String password;
     private String email;
     private Role role;
-
     private String image;
+
+    List<Token> tokens;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
